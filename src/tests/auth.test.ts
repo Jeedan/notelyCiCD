@@ -3,7 +3,7 @@ import { getAPIKey } from "../api/auth.js";
 
 describe("auth", () => {
   test("authHeader is defined", () => {
-    const headers = { authorization: "ApiKy 12345" };
+    const headers = { authorization: "ApiKey 12345" };
     const apiKey = getAPIKey(headers);
     expect(apiKey).toBeDefined();
   });
