@@ -9,7 +9,7 @@ describe("auth", () => {
   });
 
   test("getAPIKey extracts the key correctly", () => {
-    const headers = { authorization: "ApiKey 1234" };
+    const headers = { authorization: "ApiKey 12345" };
     const apiKey = getAPIKey(headers);
     expect(apiKey).toBe("12345");
   });
